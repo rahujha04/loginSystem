@@ -45,14 +45,14 @@ function Login() {
           onChange={(event) =>
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
-          placeholder="Enter email address"
+          placeholder="Enter Your email address"
         />
         <InputControl
           label="Password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
-          placeholder="Enter Password"
+          placeholder="Enter The Password"
         />
 
         <div className={styles.footer}>
@@ -61,7 +61,7 @@ function Login() {
             Login
           </button>
           <p>
-            Already have an account?{" "}
+           Do You Already Have An Account?{" "}
             <span>
               <Link to="/signup">Sign up</Link>
             </span>
