@@ -7,8 +7,6 @@ import Signup from "./components/Signup/Signup";
 
 import { auth } from "./firebase";
 
-import "./App.css";
-
 function App() {
   const [userName, setUserName] = useState("");
 
@@ -21,7 +19,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{height: '100vh', background: 'cyan'}}>
+      <center>
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
@@ -29,6 +28,7 @@ function App() {
           <Route path="/" element={<Home name={userName} />} />
         </Routes>
       </Router>
+      </center>
     </div>
   );
 }
